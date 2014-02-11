@@ -1,0 +1,35 @@
+CREATE TABLE Affixes(
+	AffixCode		INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Affix			TEXT,
+	PhonologicalForm	TEXT,
+	AffixName		TEXT,
+	Meaning			TEXT,
+	Posit			TEXT,
+	Type			TEXT,
+	StressPattern		TEXT,
+	PhonemeInsertion	TEXT,
+	PhoneticChanges		TEXT,
+	StemCategory		TEXT,
+	StemPlusAffixCategory	TEXT,
+	LexicalHomograph	TEXT,
+	Resyllab		INT,
+	Vowel_OK		TEXT
+) ;
+
+CREATE TABLE AffixTypes(
+	MeaningCode		TEXT,
+	Meaning			TEXT
+);
+
+CREATE TABLE Entries(
+	PhonologicalForm	TEXT,
+	WrittenForm		TEXT,
+	SynCatCode		TEXT,
+	Freq			INT,
+	StressPattern		TEXT
+);
+
+CREATE TABLE  SyntacticCategories(
+	Code 			TEXT,
+	Type	 		TEXT
+) ;
